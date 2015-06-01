@@ -79,7 +79,7 @@ void loop() {
 
     if (t>40 && t<50){
 	setColor(0, 255, 0); //red
-	digitalWrite(fanPin, HIGH);  // red
+	digitalWrite(fanPin, HIGH); 
     }
 
     bvSerial.strData = "";
@@ -111,7 +111,7 @@ void loop() {
   
   else if (bvSerial.strData == "fourth")
   {
-    setColor(3, 255, 15);  // oorange
+    setColor(3, 255, 15);  // orange
     digitalWrite(fanPin, LOW);
     bvSerial.strData = "";
     lightLevel = 0;
